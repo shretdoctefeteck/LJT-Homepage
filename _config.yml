@@ -22,7 +22,6 @@ author:
   uri              :
   email            : "jliugi@connect.ust.hk"
 
-  # Academic websites
   academia         :
   arxiv            :
   googlescholar    : "https://scholar.google.com/citations?hl=en&amp;user=tbK9jl4AAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
@@ -36,7 +35,6 @@ author:
   scopus           :
   zotero           :
 
-  # Repositories and software development
   bitbucket        :
   codepen          :
   dribbble         :
@@ -44,7 +42,6 @@ author:
   kaggle           :
   stackoverflow    :
 
-  # Social media
   artstation       :
   bluesky          :
   facebook         :
@@ -115,15 +112,11 @@ atom_feed:
   hide                   : false
   path                   :
 
-
-# SEO Related
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-
-# Social Sharing
 twitter:
   username               : &amp;twitter
 facebook:
@@ -137,15 +130,11 @@ social:
   name                   :
   links:
 
-
-# Analytics
 analytics:
   provider               :  "false"
   google:
     tracking_id          :
 
-
-# Reading Files
 include:
   - .htaccess
   - _pages
@@ -183,16 +172,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -203,17 +188,12 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# Collections
 collections:
   publications:
     output: true
     permalink: /:collection/:path/
 
-
-# Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -224,14 +204,12 @@ defaults:
       comments: false
       share: true
       related: true
-  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # _publications
   - scope:
       path: ""
       type: publications
@@ -241,21 +219,15 @@ defaults:
       share: true
       comments: false
 
-
-# Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed
 
-
-# Outputting
 permalink: /:categories/:title/
 paginate: 5
 paginate_path: /page:num/
 timezone: Asia/Hong_Kong
 
-
-# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -270,8 +242,6 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
-# Archives
 category_archive:
   type: liquid
   path: /categories/
@@ -279,8 +249,6 @@ tag_archive:
   type: liquid
   path: /tags/
 
-
-# HTML Compression
 compress_html:
   clippings: all
   ignore:
